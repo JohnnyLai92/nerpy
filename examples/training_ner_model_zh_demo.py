@@ -82,7 +82,8 @@ def main():
         # Predictions on text strings
         sentences = [
             "常建良，男，1963年出生，工科学士，高级工程师，北京物资学院客座副教授",
-            "1985年8月-1993年在国家物资局、物资部、国内贸易部金属材料流通司从事国家统配钢材中特种钢材品种的调拨分配工作，先后任科员、主任科员。"
+            "1985年8月-1993年在国家物资局、物资部、国内贸易部金属材料流通司从事国家统配钢材中特种钢材品种的调拨分配工作，先后任科员、主任科员。",
+            "您好，我是常建良有多模態客服機器人開發應用，(北京國科會、玉山、電商客服開發經驗)。支援語音、文字、檔案上傳"
         ]
         predictions, raw_outputs, entities = model.predict(sentences, split_on_space=False)
         print(predictions, entities)
